@@ -1,0 +1,73 @@
+.dock {
+  @apply fixed bottom-4 left-1/2 -translate-x-1/2 z-40 hidden md:block;
+}
+
+.dock-container {
+  @apply bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 
+         border-2 border-gray-200 dark:border-gray-800 rounded-full p-1.5 shadow-lg
+         backdrop-blur-sm bg-opacity-80 dark:bg-opacity-80
+         transition-all duration-300 ease-in-out;
+}
+
+.dock-container:hover {
+  @apply shadow-xl scale-105;
+  transform-origin: center;
+}
+
+.dock-items {
+  @apply flex flex-row space-x-2;
+}
+
+.dock-divider {
+  @apply border-l my-0.5;
+}
+
+.dock-icon {
+  @apply relative flex flex-col items-center p-1;
+}
+
+.dock-icon-content {
+  @apply p-1 text-[var(--color-grey)] hover:text-foreground transition-colors;
+}
+
+.dock-icon-active {
+  @apply text-foreground;
+}
+
+.dock-icon-inactive {
+  @apply text-[var(--color-grey)] hover:text-foreground;
+}
+
+.dock-tooltip {
+  @apply absolute bottom-full mb-2 px-2 py-1 text-xs bg-white dark:bg-black border rounded-md shadow-sm;
+}
+
+.mobile-dock {
+  @apply fixed bottom-0 left-0 right-0 z-40 md:hidden;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-dock-visible {
+  transform: translateY(0);
+}
+
+.mobile-dock-hidden {
+  transform: translateY(100%);
+}
+
+.mobile-dock-container {
+  @apply bg-white dark:bg-black border-t p-2;
+}
+
+.mobile-dock-items {
+  @apply grid grid-cols-3 gap-2;
+}
+
+.mobile-dock-social {
+  @apply mt-2 flex justify-center space-x-3;
+}
+
+.mobile-menu-toggle {
+  @apply fixed bottom-4 right-4 z-50 p-2 rounded-full bg-primary text-primary-foreground shadow-lg md:hidden;
+} 

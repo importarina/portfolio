@@ -1,0 +1,22 @@
+# Core blog processing libraries
+markdown==3.4.3
+python-frontmatter==1.0.0
+pygments==2.15.1
+
+# Optional - for enhanced markdown features
+pymdown-extensions==10.0.1
+
+# Optional - for image processing
+Pillow==10.0.0
+
+# Web server and API
+Flask==2.3.3
+Flask-Cors==4.0.0
+Flask-Mail==0.9.1
+python-dotenv==1.0.0
+email-validator==2.1.0
+requests==2.31.0
+gunicorn==21.2.0
+
+# Utilities
+python-dateutil==2.8.2
