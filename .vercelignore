@@ -1,5 +1,4 @@
 .git
-.gitattributes
 .gitignore
 node_modules
 .next
