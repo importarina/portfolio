@@ -12,8 +12,12 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Arina Momajjed | Software Engineer",
-  description: "Personal portfolio of Arina Momajjed, Software Engineer"
+  title: "Arina Momajjed",
+  description: "Personal portfolio of Arina Momajjed, Software Engineer",
+  icons: {
+    icon: '/images/profile/arina.png',
+    apple: '/images/profile/arina.png',
+  }
 }
 
 export default function RootLayout({
