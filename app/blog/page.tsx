@@ -4,6 +4,8 @@ import Link from "next/link"
 import { CalendarIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { useSearchParams } from "next/navigation"
+import { Suspense } from "react"
+import BlogContent from "./BlogContent"
 
 // Simple blog post type
 type BlogPost = {
@@ -21,12 +23,6 @@ const posts: BlogPost[] = []
 const allTags = Array.from(new Set(posts.flatMap(post => post.tags)))
 
 export default function BlogPage() {
-  const searchParams = useSearchParams()
-  const selectedTag = searchParams.get('tag')
-  const filteredPosts = selectedTag
-    ? posts.filter(post => post.tags.includes(selectedTag))
-    : posts
-
   return (
     <main className="min-h-screen pb-20 md:pl-24">
       <div className="container mx-auto px-4 py-8">
@@ -35,57 +31,9 @@ export default function BlogPage() {
             Blog
           </h1>
         </div>
-        
-        {posts.length === 0 ? (
-          <div className="py-12">
-            <p className="mt-2 text-muted-foreground">Coming soon!</p>
-          </div>
-        ) : (
-          <>
-            {/* Tags filter */}
-            <div className="mb-8">
-              <div className="flex flex-wrap gap-2 items-center">
-                <span className="text-sm text-muted-foreground">Filter by tag:</span>
-                <Link href="/blog">
-                  <Badge variant={!selectedTag ? "default" : "outline"} className="cursor-pointer">
-                    All
-                  </Badge>
-                </Link>
-                {allTags.map((tag) => (
-                  <Link key={tag} href={`/blog?tag=${tag}`}>
-                    <Badge variant={selectedTag === tag ? "default" : "outline"} className="cursor-pointer">
-                      {tag}
-                    </Badge>
-                  </Link>
-                ))}
-              </div>
-            </div>
-            
-            <div className="space-y-8">
-              {filteredPosts.map((post) => (
-                <article key={post.slug} className="border-b pb-6">
-                  <Link href={`/blog/${post.slug}`}>
-                    <h2 className="text-2xl font-semibold hover:underline">{post.title}</h2>
-                  </Link>
-                  <div className="flex items-center gap-2 mt-2 text-sm text-muted-foreground">
-                    <CalendarIcon className="h-4 w-4" />
-                    <time dateTime={post.date}>{formatDate(post.date)}</time>
-                  </div>
-                  <p className="mt-2 text-muted-foreground">{post.excerpt}</p>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {post.tags.map((tag) => (
-                      <Link key={tag} href={`/blog?tag=${tag}`}>
-                        <Badge variant="secondary" className="cursor-pointer">
-                          {tag}
-                        </Badge>
-                      </Link>
-                    ))}
-                  </div>
-                </article>
-              ))}
-            </div>
-          </>
-        )}
+        <Suspense fallback={<div>Loading...</div>}>
+          <BlogContent />
+        </Suspense>
       </div>
     </main>
   )
