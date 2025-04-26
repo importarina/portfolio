@@ -12,7 +12,10 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Arina Momajjed",
+  title: {
+    template: '%s | Arina Momajjed',
+    default: 'Arina Momajjed',
+  },
   description: "Personal portfolio of Arina Momajjed, Software Engineer",
   icons: {
     icon: '/images/profile/arina.png',

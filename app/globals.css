@@ -146,10 +146,9 @@ body {
     @apply text-gray-600 dark:text-gray-400;
   }
 
-  /* Removed the blog and gallery heading styles since we're using rainbow-text now */
 }
 
-/* Rainbow text effect - subtle and minimal */
+
 .rainbow-text {
   background-image: linear-gradient(to right, #ff8a00, #e52e71, #b36efd, #3a8ffe, #38ef7d);
   -webkit-background-clip: text;
