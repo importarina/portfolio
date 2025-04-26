@@ -16,20 +16,35 @@ const path = require('path');
 const baseSourceDir = path.join(process.cwd(), 'public', 'images');
 const baseDestDir = path.join(process.cwd(), '.next', 'static', 'images');
 
-// Get all subdirectories under public/images
-function getImageDirectories() {
+// Get all subdirectories and files under public/images
+function getImageItems() {
   if (!fs.existsSync(baseSourceDir)) {
     console.log(`Base images directory not found: ${baseSourceDir}`);
-    return [];
+    return { dirs: [], files: [] };
   }
 
   const items = fs.readdirSync(baseSourceDir);
-  return items
-    .filter(item => fs.statSync(path.join(baseSourceDir, item)).isDirectory())
-    .map(dir => ({
-      source: path.join(baseSourceDir, dir),
-      dest: path.join(baseDestDir, dir)
-    }));
+  const dirs = [];
+  const files = [];
+
+  items.forEach(item => {
+    const fullPath = path.join(baseSourceDir, item);
+    const stat = fs.statSync(fullPath);
+    
+    if (stat.isDirectory()) {
+      dirs.push({
+        source: fullPath,
+        dest: path.join(baseDestDir, item)
+      });
+    } else if (stat.isFile() && /\.(jpg|jpeg|png|gif|webp)$/i.test(item)) {
+      files.push({
+        source: fullPath,
+        dest: path.join(baseDestDir, item)
+      });
+    }
+  });
+
+  return { dirs, files };
 }
 
 // Copy all files from source to destination
@@ -60,23 +75,38 @@ function copyFiles(source, destination) {
   });
 }
 
-// Get all image directories and copy their contents
-const imageDirs = getImageDirectories();
+// Get all image items and copy their contents
+const { dirs, files } = getImageItems();
 
-if (imageDirs.length === 0) {
-  console.log('No image directories found in public/images');
+if (dirs.length === 0 && files.length === 0) {
+  console.log('No images found in public/images');
 } else {
-  console.log('\nFound image directories:');
-  imageDirs.forEach(({ source }) => {
-    const dirName = path.basename(source);
-    console.log(`- ${dirName}`);
-  });
+  // Copy root images
+  if (files.length > 0) {
+    console.log('\nCopying root images:');
+    files.forEach(({ source, dest }) => {
+      const dir = path.dirname(dest);
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+      fs.copyFileSync(source, dest);
+      console.log(`Copied: ${path.basename(source)}`);
+    });
+  }
 
-  // Copy all images from each directory
-  imageDirs.forEach(({ source, dest }) => {
-    console.log(`\nCopying images from ${source} to ${dest}`);
-    copyFiles(source, dest);
-  });
+  // Copy directory contents
+  if (dirs.length > 0) {
+    console.log('\nFound image directories:');
+    dirs.forEach(({ source }) => {
+      const dirName = path.basename(source);
+      console.log(`- ${dirName}`);
+    });
+
+    dirs.forEach(({ source, dest }) => {
+      console.log(`\nCopying images from ${source} to ${dest}`);
+      copyFiles(source, dest);
+    });
+  }
 }
 
 console.log('\nImage copy complete!'); 

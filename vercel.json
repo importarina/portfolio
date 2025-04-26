@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/images/(.*)",
-      "dest": "/images/$1"
+      "dest": "/_next/static/images/$1"
     }
   ],
   "env": {
