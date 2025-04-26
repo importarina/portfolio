@@ -33,7 +33,8 @@ export async function GET() {
       ...item,
       photos: item.photos.map((photo: any) => ({
         ...photo,
-        src: `/images/gallery/${photo.filename}`
+        // Use the correct path for Vercel deployment
+        src: `/_next/static/images/gallery/${photo.filename}`
       }))
     }))
     
