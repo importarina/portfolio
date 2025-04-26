@@ -39,10 +39,8 @@ This project uses GitHub Actions for automatic deployment:
 - Environment variables are set in Vercel dashboard
 - Required secrets:
   - `VERCEL_TOKEN`
-  - `VERCEL_ORG_ID`
   - `VERCEL_PROJECT_ID`
   - `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`
-  - `NEXT_PUBLIC_API_URL`
 
 ### Backend (Heroku)
 - Deploys automatically when backend changes are pushed to main
