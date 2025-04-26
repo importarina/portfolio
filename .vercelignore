@@ -3,4 +3,8 @@
 node_modules
 .next
 .env*
-!.env.example 
+!.env.example
+# Don't ignore public directory
+!public/
+!public/images/
+!public/images/gallery/ 

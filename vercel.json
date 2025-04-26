@@ -6,6 +6,12 @@
       "use": "@vercel/next"
     }
   ],
+  "routes": [
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    }
+  ],
   "env": {
     "NEXT_PUBLIC_API_URL": "https://your-heroku-app.herokuapp.com"
   }
