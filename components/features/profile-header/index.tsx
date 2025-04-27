@@ -22,7 +22,7 @@ export function ProfileHeader() {
               className="p-1.5 h-auto rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
               asChild
             >
-              <a href="/files/arina-momajjed-cv.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/files/ArinaMomajjed-CV-web.pdf" target="_blank" rel="noopener noreferrer">
                 <FileText className="h-5 w-5 text-gray-500" />
               </a>
             </Button>

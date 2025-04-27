@@ -31,7 +31,7 @@ export function FixedCVButton() {
     >
       <div className="relative group">
         <a
-          href="/files/arina-momajjed-cv.pdf"
+          href="/files/ArinaMomajjed-CV-web.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-10 h-10 rounded-md bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 shadow-lg transition-colors"
