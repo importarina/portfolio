@@ -56,6 +56,7 @@ export const fileSystem: FileSystemNode = {
               content:
                 "BikEtail:\n" +
                 "- A full-stack online marketplace for urban mobility devices that facilitates buying, selling, and renting\n" +
+                "- Supports authentication, multiple user types and access levels, and item reviews\n" +
                 "- Technologies used: HTML, CSS, TypeScript, React, Node.js, Express, MongoDB\n\n" +
                 "LyriChord.js:\n" +
                 "- VanillaJS library for displaying lyrics with guitar chords in a simple, readable format on the DOM\n" +

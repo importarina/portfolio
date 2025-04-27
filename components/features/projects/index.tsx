@@ -6,7 +6,7 @@ export function Projects() {
     {
       title: "BikEtail",
       description:
-        "A full-stack online marketplace for urban mobility devices that facilitates buying, selling, and renting",
+        "Online marketplace for urban mobility devices that facilitates buying, selling, and renting. Supports authentication, multiple user types and access levels, and item reviews",
       technologies: ["HTML", "CSS", "TypeScript", "React", "Node.js", "Express", "MongoDB"],
       githubUrl: "#",
       liveUrl: "#",
