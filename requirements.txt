@@ -7,7 +7,7 @@ pygments==2.15.1
 pymdown-extensions==10.0.1
 
 # Optional - for image processing
-Pillow==10.0.0
+Pillow==10.2.0
 
 # Web server and API
 Flask==2.3.3
