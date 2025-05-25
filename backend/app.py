@@ -4,11 +4,11 @@ Flask backend for the portfolio website.
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_mail import Mail, Message
-import db
+from backend import db
+from backend.utils import Config, setup_logging, validate_contact_data, sanitize_input
 import json
 import os
 import requests
-from utils import Config, setup_logging, validate_contact_data, sanitize_input
 
 # Set up logging
 logger = setup_logging()
