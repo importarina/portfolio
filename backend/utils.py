@@ -15,7 +15,7 @@ class Config:
     """Configuration settings for the application."""
     SECRET_KEY = os.getenv('SECRET_KEY', 'your-secret-key-here')
     DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///data/portfolio.db')
-    CORS_ORIGINS = os.getenv('CORS_ORIGINS', 'http://localhost:3000').split(',')
+    CORS_ORIGINS = os.getenv('CORS_ORIGINS', 'http://localhost:3000,https://www.arina.sh').split(',')
     LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
 
 def setup_logging():
