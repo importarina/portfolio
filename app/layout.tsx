@@ -2,6 +2,7 @@ import type React from "react"
 import { Inter } from "next/font/google"
 import { Dock } from "@/components/layout/dock"
 import { Footer } from "@/components/layout/footer"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const inter = Inter({ 
@@ -41,6 +42,7 @@ export default function RootLayout({
         <Dock />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
