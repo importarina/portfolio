@@ -21,6 +21,9 @@
 
 .dark {
   /* Dark mode colors */
+  --foreground: #ffffff;
+  --background: #000000;
+  
   --color-grey: #979A9B;
   --color-brown: #937264;
   --color-orange: #FFA344;
@@ -123,29 +126,6 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-
-  /* Only color main section headings (h2) */
-  section > h2 {
-    @apply text-blue-600 dark:text-blue-400;
-  }
-
-  /* Special section headings */
-  #skills > h2 {
-    @apply text-emerald-600 dark:text-emerald-400;
-  }
-
-  #experience > h2 {
-    @apply text-amber-600 dark:text-amber-400;
-  }
-
-  #projects > h2 {
-    @apply text-rose-600 dark:text-rose-400;
-  }
-
-  #contact > h2 {
-    @apply text-gray-600 dark:text-gray-400;
-  }
-
 }
 
 
@@ -646,4 +626,3 @@ section#contact > h2 {
 .grecaptcha-badge {
   visibility: hidden !important;
 }
-
