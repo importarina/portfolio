@@ -23,13 +23,11 @@ export const fileSystem: FileSystemNode = {
               name: "about.txt",
               type: "file",
               content:
-                "I'm Arina, a software engineer passionate about building creative, efficient, " +
-                "scalable and impactful solutions. With a Computer Science degree from the " +
-                "University of Toronto, I worked as a Software Engineer at theScore on multiple " +
-                "data platform applications, including developing a data observability tool and " +
-                "a full-stack analytics editor. I love learning and connecting ideas from diverse " +
-                "fields like psychology, AI, and photography. You can learn more about me in the " +
-                "About section of my website.",
+              "I’m Arina — a backend engineer at PayFare/Fiserv passionate about building creative, " +
+              "efficient, and scalable software that makes real impact. I’ve worked across data platforms, " +
+              "microservices, and user-facing products using Python, FastAPI, React, and cloud technologies. " +
+              "Outside of code, I’m curious about psychology, AI, and photography. " +
+              "You can learn more about me in the About section of my website.",
             },
             "education.txt": {
               name: "education.txt",

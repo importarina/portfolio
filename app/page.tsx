@@ -25,14 +25,15 @@ export default function Home() {
           <Separator className="section-separator" />
           <div className="prose dark:prose-invert max-w-none">
             <p>
-              Hi, I'm Arina! I'm a software engineer passionate about building creative, efficient, 
-              and scalable solutions that make a real impact. I earned my Computer Science degree from the 
-              University of Toronto and have spent the last few years creating software solutions for 
-              data teams, with a strong focus on backend and full-stack development using technologies like 
-              Python, FastAPI, React, TypeScript, SQL, Docker, Kubernetes, AWS, and Google Cloud.
+            Hi, I’m Arina! I’m a software engineer passionate about building creative, efficient, 
+            and scalable solutions that make a real impact. I earned my Computer Science degree from the University of Toronto 
+            and currently work as a backend engineer at PayFare/Fiserv, where I develop and maintain multiple microservices and 
+            user-facing products. Over the past few years, I’ve created software solutions for data teams with a strong focus on 
+            backend and full-stack development using technologies like Python, FastAPI, Flask, RabbitMQ, Redis, MySQL, Redshift, 
+            React, TypeScript, SQL, Docker, Kubernetes, AWS, and Google Cloud.
             </p>
 
-            <p>
+            {/* <p>
               As a software engineer at theScore, I took the initiative to identify key challenges and design solutions that 
               directly improved the efficiency of our data workflows. I worked closely with data analysts 
               and data scientists, designing APIs, web applications, and real-time monitoring systems 
@@ -41,7 +42,7 @@ export default function Home() {
               incident response and reliability for our analytics workflows. Additionally, I learned React 
               and TypeScript on the go during my internship and built a full-stack analytics editor that 
               became widely used and relied upon by the data team.
-            </p>
+            </p> */}
 
             <p>
               Outside of programming, I'm interested in psychology, AI, and photography. I enjoy learning new 
@@ -49,10 +50,9 @@ export default function Home() {
               coding, I'm reading, focused on fitness, spending time outdoors, or with loved ones.
             </p>
 
-            <p>
-              I'm currently looking for full-stack or backend engineering roles where I can continue making 
-              an impact and building meaningful projects.
-            </p>
+            {/* <p>
+              I love collaborating on cool projects and learning new things. Let's get in touch!
+            </p> */}
           </div>
         </section>
 

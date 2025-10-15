@@ -4,6 +4,16 @@ import ExperienceCard from "@/components/shared/ExperienceCard";
 export function Experience() {
   const experiences: Experience[] = [
     {
+      company: "PayFare/Fiserv",
+      position: "Software Engineer, Backend",
+      startDate: "Sep 2025",
+      endDate: "Present",
+      description: [
+        "Member of the backend team, responsible for building and maintaining the backend services for the PayFare platform",
+      ],
+      technologies: ["Python", "FastAPI", "Flask", "MySQL", "Redshift", "Docker", "Kubernetes", "AWS", "RabbitMQ", "Redis", "Bash"],
+    },
+    {
       company: "theScore",
       position: "Software Engineer, Data Platforms",
       startDate: "Jun 2023",

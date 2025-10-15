@@ -55,7 +55,7 @@ export function Skills() {
         { name: "BigQuery", level: 70, category: "database" },
         { name: "Apache Spark", level: 70, category: "database" },
         { name: "Apache Kafka", level: 70, category: "database" },
-        
+        { name: "Redis", level: 70, category: "database" },
       ],
     },
     {
@@ -69,6 +69,7 @@ export function Skills() {
         { name: "AWS", level: 75, category: "devops" },
         { name: "Google Cloud", level: 75, category: "devops" },
         { name: "Datadog", level: 80, category: "devops" },
+        { name: "RabbitMQ", level: 70, category: "devops" },
 
       ],
     },
