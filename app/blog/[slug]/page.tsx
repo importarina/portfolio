@@ -90,7 +90,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   if (!post) notFound()
 
   return (
-    <article className="min-h-screen pb-20 md:pl-24">
+    <article className="min-h-screen pb-20">
       <div className="container mx-auto px-4 py-8">
         <Link 
           href="/blog" 

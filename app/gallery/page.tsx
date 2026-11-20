@@ -9,7 +9,7 @@ import { Photography } from "@/components/features/photography"
 
 export default function GalleryPage() {
   return (
-    <main className="min-h-screen pb-20 md:pl-24">
+    <main className="min-h-screen pb-20">
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold rainbow-text leading-tight">Photography</h1>

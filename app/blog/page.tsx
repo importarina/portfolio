@@ -24,7 +24,7 @@ const allTags = Array.from(new Set(posts.flatMap(post => post.tags)))
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen pb-20 md:pl-24">
+    <main className="min-h-screen pb-20">
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold rainbow-text leading-tight">
