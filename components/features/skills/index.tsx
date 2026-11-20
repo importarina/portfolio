@@ -21,9 +21,6 @@ export function Skills() {
         { name: "C++", level: 65, category: "backend" },
         { name: "Java", level: 50, category: "backend" },
         { name: "Bash", level: 80, category: "other" },
-        { name: "MATLAB", level: 50, category: "other" },
-        { name: "Scheme", level: 50, category: "other" },
-        { name: "Haskell", level: 75, category: "other" },
       ],
     },
     {
@@ -33,6 +30,9 @@ export function Skills() {
         { name: "Flask", level: 90, category: "backend" },
         { name: "Django", level: 85, category: "backend" },
         { name: "SQLAlchemy", level: 90, category: "database" },
+        { name: "Temporal", level: 80, category: "backend" },
+        { name: "RabbitMQ", level: 70, category: "backend" },
+        { name: "Redis", level: 70, category: "database" },
         { name: "Next.js", level: 75, category: "frontend" },
         { name: "React", level: 85, category: "frontend" },
         { name: "Node.js", level: 80, category: "backend" },
@@ -55,7 +55,6 @@ export function Skills() {
         { name: "BigQuery", level: 70, category: "database" },
         { name: "Apache Spark", level: 70, category: "database" },
         { name: "Apache Kafka", level: 70, category: "database" },
-        { name: "Redis", level: 70, category: "database" },
       ],
     },
     {
@@ -69,7 +68,6 @@ export function Skills() {
         { name: "AWS", level: 75, category: "devops" },
         { name: "Google Cloud", level: 75, category: "devops" },
         { name: "Datadog", level: 80, category: "devops" },
-        { name: "RabbitMQ", level: 70, category: "devops" },
 
       ],
     },

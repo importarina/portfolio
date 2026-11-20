@@ -32,12 +32,12 @@ export function ProfileHeader() {
           </div>
         </div>
 
-        <p className="text-2xl md:text-3xl text-muted-foreground mt-3">Software Engineer</p>
+        {/* <p className="text-2xl md:text-3xl text-muted-foreground mt-3">Senior Software Engineer</p> */}
 
         <p className="mt-6 max-w-none text-lg md:text-xl">
-          <span className="block">Driven software engineer and UofT CS Alumna.</span>
-          <span className="block">I love creating impactful, efficient, and scalable software.</span>
-          <span className="block">Welcome to my personal website!</span>
+          <span className="block">I’m a deeply curious and mission-driven software engineer</span>
+          <span className="block">who's drawn to work that puts technology to good use.</span>
+          {/* <span className="block">Welcome to my personal website!</span> */}
         </p>
       </div>
     </div>

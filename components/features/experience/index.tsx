@@ -4,44 +4,43 @@ import ExperienceCard from "@/components/shared/ExperienceCard";
 export function Experience() {
   const experiences: Experience[] = [
     {
-      company: "PayFare/Fiserv",
-      position: "Software Engineer, Backend",
-      startDate: "Sep 2025",
+      company: "Fiserv",
+      position: "Senior Software Engineer, Digital Assets Platform",
+      startDate: "Jan 2026",
       endDate: "Present",
       description: [
-        "Member of the backend team, responsible for building and maintaining the backend services for the PayFare platform",
+        "Selected as an early backend engineer on a small internal startup team building Fiserv’s digital assets platform from the ground up, helping define its architecture and core backend systems",
+        "Designed backend services and REST APIs for onboarding, wallet creation, DDA linking, account inquiries, compliance workflows, and digital-asset transactions including minting, burning, and wallet-to-wallet transfers",
+        "Designed durable Temporal workflows across internal services and external providers using retries, idempotency, compensation, and failure recovery to preserve correctness in distributed financial transactions",
+        "Integrated banking, ledger, blockchain, custody, and compliance systems and built APIs for transaction review and risk controls, partnering with internal teams and vendors to prepare for the platform’s first major bank launch",
+      ],
+      technologies: ["Python", "FastAPI", "Temporal", "PostgreSQL", "SQLAlchemy", "Docker", "AWS"],
+    },
+    {
+      company: "Fiserv",
+      position: "Senior Software Engineer, Client Apps",
+      startDate: "Sep 2025",
+      endDate: "Jan 2026",
+      description: [
+        "Developed backend features across a multi-tenant fintech platform serving millions of users, working across dozens of microservices supporting programs including Lyft, Uber, DoorDash, and Paycom",
+        "Independently designed configurable campaign functionality with per-user and aggregate cashback caps, enabling repeatable promotions, controlled experiments, and new revenue-generating use cases",
+        "Built transaction and rewards workflows across REST APIs, queues, webhooks, and shared services, partnering with QA, mobile, and DevOps to safely deliver cross-service changes and production experiments",
       ],
       technologies: ["Python", "FastAPI", "Flask", "MySQL", "Redshift", "Docker", "Kubernetes", "AWS", "RabbitMQ", "Redis", "Bash"],
     },
     {
       company: "theScore",
-      position: "Software Engineer, Data Platforms",
-      startDate: "Jun 2023",
+      position: "Software Engineer, Data Services",
+      startDate: "Sep 2021",
       endDate: "Sep 2024",
       description: [
-        "Built, deployed, and maintained APIs, web apps, and internal tools for data processing and operational workflows",
-        "Developed a stream transformation monitoring system to track pipeline health across key metrics and trigger real-time alerts for issues, significantly improving observability and incident response",
-        "Designed and implemented report generation and fulfillment microservice to automatically generate and send reports to various stakeholders based on specific criteria, with the ability to scale as the business grows",
-        "Created and executed MVP roadmaps to deliver reliable, scalable systems aligned with evolving business needs",
-        "Led core service migration from Redshift to BigQuery, improving performance, cost efficiency, and scalability",
-        "Conducted a POC for streaming technologies (Spark, Flink), providing actionable insights to optimize real-time data processing and scalability",
-        "Managed on-call shifts to ensure system uptime and reliability",
+        "Built APIs, internal tools, and data-processing services using Python, FastAPI, PostgreSQL, BigQuery, React, and Kubernetes, including independently developing a widely used internal web application for data teams",
+        "Developed real-time stream monitoring and scalable report-generation services, improving observability, incident response, and automated reporting",
+        "Led Redshift-to-BigQuery migrations and built tooling to automate PostgreSQL transfers across Kubernetes environments, improving scalability and reducing manual operational work",
+        "Evaluated Apache Spark and Apache Flink through proof of concept implementations for scalable real-time data processing",
+        "Automated data workflows using SQLAlchemy and Airflow and added PagerDuty, Slack, and email alerting to improve reliability and incident response",
       ],
-      technologies: ["Python", "FastAPI", "PostgreSQL", "React", "TypeScript", "Redshift", "BigQuery", "Docker", "Kubernetes", "Apache Airflow", "Apache Spark", "Apache Kafka", "ArgoCD", "Datadog", "AWS", "Google Cloud"],
-    },
-    {
-      company: "theScore",
-      position: "Software Engineer Intern, Data Platforms",
-      startDate: "Sep 2021",
-      endDate: "May 2023",
-      description: [
-        "Independently led end-to-end development of a widely used internal web application for data teams, building full-stack features from frontend UI components to backend APIs and database integration",
-        "Migrated legacy SQL queries to SQLAlchemy ORM models, improving code maintainability and enabling faster iteration for new features",
-        "Automated recurring data ingestion and processing workflows using Apache Airflow, reducing manual effort and supporting timely reporting for analysts",
-        "Integrated notification features into internal tools, enabling real-time alerts to PagerDuty, Slack, and email based on failure severity levels, improving incident response time and system reliability",
-        "Contributed to database management, data validation, and task scheduling, helping ensure the reliability and consistency of internal data systems",
-      ],
-      technologies: ["Python", "Flask", "PostgreSQL", "SQLAlchemy", "TypeScript", "React", "Docker", "Kubernetes", "Apache Airflow", "AWS"],
+      technologies: ["Python", "FastAPI", "Flask", "PostgreSQL", "SQLAlchemy", "React", "TypeScript", "Redshift", "BigQuery", "Docker", "Kubernetes", "Apache Airflow", "Apache Spark", "Apache Kafka", "ArgoCD", "Datadog", "AWS", "Google Cloud"],
     },
     {
       company: "University of Toronto",
@@ -49,7 +48,7 @@ export function Experience() {
       startDate: "Jan 2020",
       endDate: "May 2023",
       description: [
-        "Led tutorials and graded assignments to support 20+ students, fostering analytical thinking and problem solving skills in mathematics and computer science"
+        "Led tutorials and graded assignments to support 20+ students, fostering analytical thinking and problem solving skills"
       ],
     },
     {
@@ -58,8 +57,7 @@ export function Experience() {
       startDate: "May",
       endDate: "Dec 2019",
       description: [
-        "Updated web content per client requests, ensuring accessibility standards",
-        "Proposed and developed a Python script to automate annual web maintenance by extracting and updating data from CSV/PDF files, greatly reducing manual workload",
+        "Proposed and developed a Python automation script to streamline annual web maintenance by extracting and updating data from CSV/PDF files, reducing manual workload and human error by an estimated 70%",
       ],
       technologies: ["Python", "ColdFusion", "HTML", "CSS", "JavaScript", "Bash"],
     },

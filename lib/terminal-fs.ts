@@ -23,11 +23,11 @@ export const fileSystem: FileSystemNode = {
               name: "about.txt",
               type: "file",
               content:
-              "I’m Arina — a backend engineer at PayFare/Fiserv passionate about building creative, " +
-              "efficient, and scalable software that makes real impact. I’ve worked across data platforms, " +
-              "microservices, and user-facing products using Python, FastAPI, React, and cloud technologies. " +
-              "Outside of code, I’m curious about psychology, AI, and photography. " +
-              "You can learn more about me in the About section of my website.",
+              "Hi, I’m Arina, a software engineer based in Canada and a Computer Science graduate from the University of Toronto.\n" +
+              "I’ve built tools for data teams and helped develop a financial platform from scratch.\n" +
+              "I enjoy connecting ideas across fields, especially computer science and psychology.\n" +
+              "I care about privacy, open source, and building technology that improves people’s lives.\n" +
+              "Outside of programming, I enjoy reading, photography, playing music, working out, and spending time with loved ones."
             },
             "education.txt": {
               name: "education.txt",
@@ -40,9 +40,9 @@ export const fileSystem: FileSystemNode = {
               type: "file",
               content:
                 "Languages:\n" +
-                "  Python, JavaScript, TypeScript, SQL, HTML, CSS, C, C++, Java, Shell, MATLAB, Scheme, Haskell\n\n" +
+                "  Python, JavaScript, TypeScript, SQL, HTML, CSS, C, C++, Bash, Java\n\n" +
                 "Frameworks & Libraries:\n" +
-                "  FastAPI, Flask, Django, SQLAlchemy, Next.js, React, Node.js, Express, TailwindCSS, MUI, Bootstrap\n\n" +
+                "  FastAPI, Flask, Django, SQLAlchemy, Temporal, RabbitMQ, Redis, Next.js, React, Node.js, Express, TailwindCSS, MUI, Bootstrap\n\n" +
                 "Databases and Data Tools:\n" +
                 "  PostgreSQL, MySQL, MongoDB (NoSQL), pandas, NumPy, Scikit-learn, Redshift, BigQuery, Apache Spark, Apache Kafka\n\n" +
                 "DevOps & Tools:\n" +

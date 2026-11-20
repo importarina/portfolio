@@ -25,34 +25,22 @@ export default function Home() {
           <Separator className="section-separator" />
           <div className="prose dark:prose-invert max-w-none">
             <p>
-            Hi, I’m Arina! I’m a software engineer passionate about building creative, efficient, 
-            and scalable solutions that make a real impact. I earned my Computer Science degree from the University of Toronto 
-            and currently work as a backend engineer at PayFare/Fiserv, where I develop and maintain multiple microservices and 
-            user-facing products. Over the past few years, I’ve created software solutions for data teams with a strong focus on 
-            backend and full-stack development using technologies like Python, FastAPI, Flask, RabbitMQ, Redis, MySQL, Redshift, 
-            React, TypeScript, SQL, Docker, Kubernetes, AWS, and Google Cloud.
+            Hi, I’m Arina. I’m a software engineer based in Canada.
+            I like figuring out how things work and finding connections between subjects that don’t seem related at first.
+            Psychology and computer science have both shaped how I think, and I enjoy having a reason to learn something outside my own field.
             </p>
-
-            {/* <p>
-              As a software engineer at theScore, I took the initiative to identify key challenges and design solutions that 
-              directly improved the efficiency of our data workflows. I worked closely with data analysts 
-              and data scientists, designing APIs, web applications, and real-time monitoring systems 
-              that enabled teams to tackle complex data tasks more efficiently. One of my proudest 
-              achievements was building a data observability tool from scratch, which significantly improved 
-              incident response and reliability for our analytics workflows. Additionally, I learned React 
-              and TypeScript on the go during my internship and built a full-stack analytics editor that 
-              became widely used and relied upon by the data team.
-            </p> */}
-
             <p>
-              Outside of programming, I'm interested in psychology, AI, and photography. I enjoy learning new 
-              things and am always looking for ways to connect ideas from different fields. When I'm not 
-              coding, I'm reading, focused on fitness, spending time outdoors, or with loved ones.
+            I studied Computer Science at the University of Toronto. My work has ranged from building tools for data teams at theScore to helping build a financial platform from the ground up at Fiserv.
+            I enjoy understanding a complicated problem and turning it into software that’s straightforward to use and maintain.
+            </p>
+            <p>
+            The purpose behind a project matters a lot to me. I care about privacy and open source, and I’m interested in how software can contribute to healthcare and science.
+            I want to put my skills toward work I believe in and build things that improve people’s lives.
+            </p>
+            <p>
+              Outside of programming, I enjoy reading, photography, playing music, working out, and spending time with loved ones.
             </p>
 
-            {/* <p>
-              I love collaborating on cool projects and learning new things. Let's get in touch!
-            </p> */}
           </div>
         </section>
 
